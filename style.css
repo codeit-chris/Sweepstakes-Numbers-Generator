@@ -90,7 +90,7 @@
 
 @media (max-width: 480px) {
   .container {
-    height: 100vh;
+    height: 130vh;
   }
   .quote-container {
     max-height: 100px;
