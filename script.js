@@ -61,3 +61,7 @@ function clear() {
 
 // clear button event listener
 document.getElementById("btn-clear").addEventListener("click", clear);
+
+const currentYear = new Date().getFullYear();
+
+document.getElementById("copyright-text").innerText += ` ${currentYear}`;
