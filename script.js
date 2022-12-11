@@ -21,11 +21,11 @@ setInterval(() => {
 }, 7000);
 
 // function to generate six random numbers
-function generateSix(num, min = 1) {
+function generateSix(num) {
   let sixNums = [];
   let i = 0;
   while (i < 6) {
-    let randomNum = Math.floor(Math.random() * (num - min) + min);
+    let randomNum = Math.floor(Math.random() * num + 1);
     if (sixNums.indexOf(randomNum) === -1) {
       sixNums.push(randomNum);
       i++;
