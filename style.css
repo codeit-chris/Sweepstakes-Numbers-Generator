@@ -90,11 +90,11 @@
 
 @media (max-width: 480px) {
   .container {
-    height: 130vh;
+    height: 100vh;
   }
   .quote-container {
     max-height: 100px;
-    margin: 10px 0;
+    margin: 20px 0;
   }
   #lotto-facts {
     text-align: center;
