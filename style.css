@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.picks {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.btn-pick {
+  padding: 10px;
+  margin: 0 10px;
+  border: 2px solid black;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+}
+#number {
+  background-color: teal;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  color: white;
+  margin: 40px;
+  font-size: 1.5rem;
+}
+.btn-label {
+  font-size: 1.4rem;
+}
+
+/* changes label text color when radio-btn is checked */
+.btn-pick:checked ~ label {
+  color: red;
+}
+
+#btn-clear {
+  margin-top: 20px;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  color: blue;
+  cursor: pointer;
+  background: transparent;
+}
+#btn-clear:hover {
+  color: rgb(53, 53, 238);
+  background: rgb(222, 222, 222);
+  border-color: rgb(53, 53, 238);
+}
+.pick-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.quote-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#lotto-facts {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+#copyright {
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .container {
+    height: auto;
+  }
+  .quote-container {
+    max-height: 100px;
+    margin: 10px 0;
+  }
+  #lotto-facts {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  .pick-container {
+    margin-top: 40px;
+  }
+  .picks {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  #btn-clear {
+    margin: 10px 0px 20px 0px;
+  }
+  #copyright {
+    position: relative;
+    bottom: 0;
+  }
+}
