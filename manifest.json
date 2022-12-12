@@ -1,0 +1,9 @@
+{
+  "name": "Sweepstakes Numbers Generator",
+  "short_name": "SNG",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/Sweepstakes-Numbers-Generator/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
